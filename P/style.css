@@ -1547,6 +1547,12 @@ p {
   transform: scale(1.1) rotate(1deg);
 }
 
+.latest-news-area .single-news .image .thumb {
+  width: 35rem ;
+  height: 17rem;
+}
+
+
 
 /*======================================
     Brand CSS
@@ -1902,4 +1908,105 @@ p {
 .footer-eleven .newsletter-form .sub-btn:hover {
   color: var(--white);
   background-color: var(--primary-dark);
+}
+
+.products .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.products .box-container .box{
+  text-align: center;
+  border: var(--border);
+  padding: 2rem;
+  
+}
+
+.products .box-container .box .icons a{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  border: var(--border);
+  background-color: #000000;
+  color: #ffffff;
+  margin: .3rem;   
+  border-radius: 10%;
+}
+
+.products .box-container .box .icons a:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.856);
+border-radius: 100% ;
+}
+
+.products .box-container .box .image{
+  padding: 2.0rem 0;
+}
+
+.products .box-container .box .image img{
+height: 20rem;
+border-radius: 2%;
+}
+
+.products .box-container .box .image img:hover{
+  height: 21rem;
+  box-shadow: #000000;
+  transition: all 1.0s;
+}
+
+
+.products .box-container .box .content h3{
+  color: #000000;
+  font-size: 2.0rem;
+
+}
+
+.products .box-container .box .content .stars{
+  padding: 1.5rem;
+}
+
+.products .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--black);
+}
+
+.products .box-container .box .content .price{
+  color:#000000;
+  font-size: 1.5rem;
+
+}
+
+.products .box-container .box .content .price span{
+  text-decoration: line-through;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  
+}
+
+.heading{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span{
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.menu .box-container .box .price{
+  color: #000000;
+  font-size:1.5rem;
+  padding: 5rem 0;
+}
+
+.ud-hero-title {
+  overflow: hidden;
+  border-right: 1px solid #000; /* Efeito cursor */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  display: inline-block; /* Garante que o efeito de máquina de escrever funcione corretamente */
 }
